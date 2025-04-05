@@ -1,0 +1,89 @@
+.box > p {
+  color: red;
+}
+
+div.divbox ~ p.harlavha#idp {
+  color: blue;
+  background-color: red;
+}
+
+h2 + span {
+  color: green;
+  background-color: red;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 400px;
+  min-height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.form > h3 {
+  text-align: center;
+  font-size: 24px;
+  font: weight 700;
+}
+
+.form_btn {
+  margin-top: 20px;
+  background-color: rgb(80, 80, 218);
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form__label_box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form__label_box > span {
+  margin-left: 10px;
+}
+
+.form__label_box__input {
+  appearance: none;
+}
+
+.form__label_box__input:checked + div {
+  background: url(../img/Icon.png) no-repeat;
+  background-position: center;
+}
+
+.form__label_box__input + div {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px transparent;
+  transition: all 0.5s 0.1s;
+}
+
+.form__label_box__input + div:hover {
+  box-shadow: 0 0 10px 5px black;
+}
+
+.form__label_box:hover > span {
+  color: red;
+}
